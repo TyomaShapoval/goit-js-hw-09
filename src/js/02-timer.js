@@ -72,4 +72,4 @@ const options = {
   }
 }
 
-flatpickr(inp, options);
+const fp = flatpickr(inp, options);
