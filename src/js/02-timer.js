@@ -3,7 +3,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 
 
-const flatpickr = require("flatpickr");
+
 const inp = document.getElementById("datetime-picker");
 const btn = document.querySelector("button[data-start]");
 const dataSpan = document.querySelectorAll(".value");
