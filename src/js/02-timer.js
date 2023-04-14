@@ -51,10 +51,10 @@ function countTime() {
 
 
 btn.disabled = true;
-btn.addEventListener("click", countTime)
+btn.addEventListener("click", countTime);
 
-flatpickr(inp, 
-  { enableTime: true,
+const options = { 
+  enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
@@ -70,4 +70,6 @@ flatpickr(inp,
         console.log(currentData.getTime())
     }
   }
-});
+}
+
+flatpickr(inp, options);
