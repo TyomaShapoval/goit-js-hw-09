@@ -34,7 +34,7 @@ function countTime() {
     dataSpan[2].textContent = `${Math.floor((currentData - dateOfOne)/(1000*60) % 60)}`.padStart(2, "0");
     dataSpan[3].textContent = `${Math.floor((currentData - dateOfOne)/(1000) % 60)}`.padStart(2, "0");
     
-    timer = setInterval(() => { 
+    const timer = setInterval(() => { 
     const dateOf = new Date().getTime()
     if (currentData > dateOf) {
     dataSpan[0].textContent = `${Math.floor((currentData - dateOf)/(1000*60*60*24))}`.padStart(2, "0");
